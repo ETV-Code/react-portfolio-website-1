@@ -12,9 +12,9 @@
 
 :root {
     --color__bg: #282C34;
-    --color__bg-variant: #20232A;
+    --color__bg_variant: #16181D;
     --color__primary: #5ED7F2;
-    --color__primart-variant: #2393D9;
+    --color__primary_variant: #2393D9;
     --color__white: #ffffff;
     --color__light: #32363E;
 
@@ -39,7 +39,7 @@ body {
     background-color: var(--color__bg);
     color: var(--color__white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-image.jpg);
+    /* background-image: url(../src/assets/bg-image.jpg); */
 }
 
 /* ================GENERAL STYLES ================ */
@@ -64,11 +64,12 @@ h1{
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--color__light);
+    color: var(--color__white);
 }
 
 section > h2 {
@@ -76,8 +77,8 @@ section > h2 {
     margin-bottom: 3rem;
 }
 
-.text-light{
-    color:var(--color__light)
+.text__light{
+    color:var(--color__white)
 }
 
 a {
@@ -85,7 +86,7 @@ a {
     transition: var(--transition);
 }
 
-a::hover {
+a:hover {
     color: var(--color__white);
 }
 
@@ -93,22 +94,29 @@ a::hover {
     width: max-content;
     display: inline-block;
     color: var(--color__primary);
-    padding: 0.75rem 1.2rem;
+    padding: 1rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--color__primary);
-    transition: var(--transition);
 }
 
 .btn:hover {
     background-color: var(--color__white);
     color: var(--color__bg);
     border-color: transparent;
+    /* border: 3px solid var(--color__white); */
 }
 
 .btn-primary {
     background: var(--color__primary);
     color: var(--color__bg);
+}
+
+.btn-secundary{
+    padding: 0.7rem 1.2rem;
+}
+.btn-secundary:hover{
+    color: var(--color__white);
 }
 
 img {
