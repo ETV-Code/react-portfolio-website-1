@@ -124,7 +124,10 @@ img {
     width: 100%;
     object-fit: cover;
 }
-
+.skill{
+    color: var(--color__primary);
+    font-size: 1.5rem;
+}
 /* ================ MEDIA QUERIES (medium devices) ================ */
 
 @media  screen and (max-width:1024px) {
